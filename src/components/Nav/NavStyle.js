@@ -59,6 +59,9 @@ border: 2px solid #F834BB;
 // pink "#D831D7"
 font-size: 25px;
 font-family: "Montserrat";
+outline: none;
+box-shadow: none;
+background-image: none;
 ${props => props.selected === true && css`
     background-color: #F834BB;
 `}
@@ -69,5 +72,16 @@ ${props => props.selected === true && css`
 
 &:hover {
     background-color: #F834BB;
+}
+
+
+@media (-moz-touch-enabled: 1), (pointer:coarse) {
+    &:hover {
+        ${props => props.clicked === true && css`
+        background: none;`}
+        // outline: none;
+        // box-shadow: none;
+        // background-image: none;
+    }
 }
 `
