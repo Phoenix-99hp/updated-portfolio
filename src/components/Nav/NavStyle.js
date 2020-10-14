@@ -59,7 +59,7 @@ border: 2px solid #F834BB;
 // pink "#D831D7"
 font-size: 25px;
 font-family: "Montserrat";
-${props => props.selected && css`
+${props => props.selected === true && css`
     background-color: #F834BB;
 `}
 @media screen and (max-width: 600px) {
