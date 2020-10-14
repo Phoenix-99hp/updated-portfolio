@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `Drake's Portfolio`,
+    description: `A portfolio of my coding projects.`,
     author: `@gatsbyjs`,
   },
   plugins: [
@@ -15,11 +15,12 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-styled-components`
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Drake's Portfolio`,
+        short_name: `Portfolio`,
         start_url: `/`,
         // This path is relative to the root of the site.
       },
