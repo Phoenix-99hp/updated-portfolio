@@ -108,7 +108,7 @@ padding-top: 25px;
 display: inline-flex;
 width: 100%;
 justify-content: center;
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 385px) {
     display: flex;
     flex-wrap: wrap;
 }
@@ -116,7 +116,7 @@ justify-content: center;
 > span {
     display: inline-flex;
     padding: 0px 10px;
-    @media screen and (max-width: 340px) {
+    @media screen and (max-width: 385px) {
         flex: 1 1 100%;
     }
 }
@@ -126,15 +126,15 @@ justify-content: center;
 }
 
 > span:nth-of-type(1){
-    @media screen and (max-width: 340px) {
-        padding-bottom: 10px;;
+    @media screen and (max-width: 385px) {
+        padding-bottom: 10px;
     }
 }`
 
 export const StyledBox = styled.div`
 height: 16px;
 width: 16px;
-border-radius: 5px;
+border-radius: 4px;
 background-color: #FADD08;
 margin-right: 5px;
 `
