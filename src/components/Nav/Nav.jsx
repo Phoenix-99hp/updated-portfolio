@@ -9,7 +9,7 @@ const Nav = ({ extraPadding }) => {
             <StyledNavList extraPadding={extraPadding}>
                 <Link to="/About"><StyledNavItem selected={typeof window !== "undefined" && window.location.pathname.includes("/About") ? true : false}>About</StyledNavItem></Link>
                 <Link to="/Portfolio"><StyledNavItem selected={typeof window !== "undefined" && window.location.pathname.includes("/Portfolio") ? true : false}>Portfolio</StyledNavItem></Link>
-                <a href={ResumeUpdated} target="_blank" rel={"noopener noreferrer"}><StyledNavItem>Resume</StyledNavItem></a>
+                <a href={ResumeUpdated} target="_blank" rel={"noopener noreferrer"}><StyledNavItem selected={false}>Resume</StyledNavItem></a>
             </StyledNavList>
         </StyledNavContainer>
     )
